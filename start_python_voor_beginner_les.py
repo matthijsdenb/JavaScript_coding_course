@@ -35,6 +35,7 @@
 # print(int(getal1) + int(getal2))
 
 # belangrijke statements: if elif else for
+import random
 getal5 = 5
 if getal5 == 5:
     print("Ja het is vijf")
@@ -46,3 +47,62 @@ else:
 # wiskundig: + / * - % // **
 # strings = een stuk tekst, kan gebruikt worden bij * of +
 # comperative operations: ==
+
+def wegaanbeginnen():
+    x = 5
+    if x == 5:
+        print("daar gaan we")
+        # return  # nu meeten stoppen met de functie
+    else:
+        print("daar gaan we helemaal niet")
+        print("dit is het laatste statement van de functie")
+
+
+wegaanbeginnen()
+
+
+def rekenen(param):
+    print(str(param)+" + 7 = "+str(param+7))
+
+
+rekenen(8)
+rekenen(12)
+
+
+def uitrekenen(param, param1):
+    print(param + param1)
+
+
+def uitrekenen(ene, andere):
+    if ene > 100:
+        print("deze som is te pittig")
+        return
+    print(ene, "plus", andere, "=", ene+andere)
+    return "dit was de som"
+
+
+uitrekenen(15, 12)
+uitrekenen(150, 12)
+resultaat = uitrekenen(150, 12)
+print(resultaat)
+
+geb3 = 15
+geb3 += 5
+print(geb3)
+
+# scope
+# for
+# array
+
+# oefenopdracht
+# dranktester 16 18 >18 fris bier alles
+
+
+def dranktester(leeftijd):
+    if leeftijd > 18:
+        print("bier")
+    else:
+        print("geen bier")
+
+
+dranktester(random.randint(12, 30))
